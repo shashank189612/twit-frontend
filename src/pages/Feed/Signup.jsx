@@ -46,7 +46,7 @@ const Signup = () => {
       name: name,
       email: email,
     };
-    axios.post("http://localhost:5000/register", user);
+    axios.post("https://twit-backend.onrender.com/register", user);
   };
 
   const handleGoogleSignIn = () => {

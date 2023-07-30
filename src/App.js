@@ -14,6 +14,8 @@ import Lists from "./pages/Lists/Lists";
 import Profile from "./pages/Profile/profile";
 import More from "./pages/More/More";
 
+export const REACT_APP_SERVER_URL = `https://twit-backend.onrender.com/`;
+
 function App() {
   return (
     <BrowserRouter>

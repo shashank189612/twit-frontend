@@ -21,7 +21,7 @@ const MainPage = ({ user }) => {
   const [imageURL, setImageURL] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/post")
+    fetch("https://twit-backend.onrender.com/post")
       .then((res) => res.json())
       .then((data) => {
         setPosts(data);
@@ -52,7 +52,7 @@ const MainPage = ({ user }) => {
         setIsLoading(false);
         if (url) {
           axios.patch(
-            `http://localhost:5000/userUpdates/${user?.email}`,
+            `https://twit-backend.onrender.com/userUpdates/${user?.email}`,
             userCoverImage
           );
         }
@@ -86,7 +86,7 @@ const MainPage = ({ user }) => {
         setIsLoading(false);
         if (url) {
           axios.patch(
-            `http://localhost:5000/userUpdates/${user?.email}`,
+            `https://twit-backend.onrender.com/userUpdates/${user?.email}`,
             userProfileImage
           );
         }
